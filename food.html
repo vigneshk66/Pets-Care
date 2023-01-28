@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORDER PETS FOOD</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+
+    <link rel="stylesheet" href="css/food.css">
+
+</head>
+<body>
+    <!-- HEADER START -->
+    <header>
+        <h1 class="logo">magic paws <span>pets food</span> </h1>
+        <ul class="nav-tab">
+            <li id="cart"><i class="fa-solid fa-cart-shopping"></i><span id="count">0</span></li>
+            <li id="login-btn"><i class="fa-solid fa-users"></i>Log-in</li>
+        </ul>
+    </header>
+    
+    <!-- LOG-IN -->
+    <div class="login">
+        <h1>LOG-IN</h1>
+        <div class="form">
+            <input type="text"  placeholder="ENTER EMAIL"><br>
+            <input type="password"  placeholder="ENTER PASSWORD"><br>
+            <button type="submit" id="login-submit">SUBMIT</button>
+        </div>
+        <div class="extra">
+            <p>Forgotten Password ?</p>
+            <p>Don't have account <span id="register-btn">Register Now..</span> </p>
+            <p>By clicking on Login, <br> I accept the <span> Terms & Conditions & Privacy Policy </span></p>
+        </div>
+    </div>
+
+    <div class="success">
+        <p><i class="fa-solid fa-thumbs-up"></i></p>
+        <p>LOGIN SUCCESSFULLY</p>
+        <button type="submit" id="success-close">OK</button>
+    </div>
+
+    <!-- REGISTER -->
+    <div class="register">
+        <h1>SIGN UP</h1>
+        <div class="reg-form">
+            <input type="text"  placeholder="FIRSTNAME"><br>
+            <input type="text"  placeholder="LASTNAME"><br>
+            <input type="text"  placeholder="ENTER EMAIL"><br>
+            <input type="password"  placeholder="ENTER PASSWORD"><br>
+            <P class="reg-extra">Already a member? <span id="login-btn2"> Log IN..</span></P>
+            <button type="submit">SIGN UP</button>
+        </div>
+    </div>
+    <!-- HEADER END -->
+
+    <!-- OFFER START -->
+    <section class="offer-banner">
+        <div class="offer-image">
+            <img src="image-food/banner.png" alt="" >
+        </div>
+        <div class="offer-pre">
+            <h5>Happiness in every <br>blows</h5>
+            <h1>Up to <span>40%</span> off</h1>
+        </div>
+    </section>
+     <!-- OFFER END -->
+
+     <!-- ITEM TAB START -->
+     <section class="container">
+        <ul id="items">
+            <li class="active"><a href="#dog">DOG</a></li>
+            <li><a href="#cat">CAT</a></li>
+            <li><a href="#fish">FISH</a></li>
+            <li><a href="#bird">BIRD</a></li>
+            <li><a href="#rabbit">RABBIT</a></li>
+        </ul>
+     </section>
+     <!-- ITEMS TAB START -->
+
+     <!-- PRODUCT STRAT -->
+        <section class="page pageactive" id="dog">
+            <div class="banner dog-banner"></div>
+            <div class="offer">
+                <img src="image-food/offer.png" class="offer-logo" alt="">
+                <img src="image-food/40.png" class="precent" alt="">
+                <img src="image-food/all.png" class="all" alt="" >
+            </div>
+            <h1 class="heading">DOG FOOD</h1>
+            <div class="product-container">
+
+                <div class="product">
+                    <div class="img-container">
+                        <img src="image-food/dog-food/dog1.png" alt="" class="product-img">
+                    </div>
+                    <h3>product name</h3>
+                    <h5>rs.100</h5>
+                    <button class="btn-item"><i class="fa fa-cart-shopping"></i> add to cart</button>
+                    <button class="btn-fav "><i class="fa fa-heart
+                        "></i></button>
+                </div>
+
+                <div class="product">
+                    <div class="img-container">
+                        <img src="image-food/dog-food/dog2.png" alt="" class="product-img">
+                    </div>
+                    <h3>product name</h3>
+                    <h5>rs.100</h5>
+                    <button class="btn-item"><i class="fa fa-cart-shopping"></i> add to cart</button>
+                    <button class="btn-fav"><i class="fa fa-heart
+                        "></i></button>
+                </div>
+
+                <div class="product">
+                    <div class="img-container">
+                        <img src="image-food/dog-food/dog3.png" alt="" class="product-img">
+                    </div>
+                    <h3>product name</h3>
+                    <h5>rs.100</h5>
+                    <button class="btn-item"><i class="fa fa-cart-shopping"></i> add to cart</button>
+                    <button class="btn-fav"><i class="fa fa-heart
+                        "></i></button>
+                </div>
+
+                <div class="product">
+                    <div class="img-container">
+                        <img src="image-food/dog-food/dog4.png" alt="" class="product-img">
+                    </div>
+                    <h3>product name</h3>
+                    <h5>rs.100</h5>
+                    <button class="btn-item"><i class="fa fa-cart-shopping"></i> add to cart</button>
+                    <button class="btn-fav"><i class="fa fa-heart
+                        "></i></button>
+                </div>
+
+                <div class="product">
+                    <div class="img-container">
+                        <img src="image-food/dog-food/dog5.png" alt="" class="product-img">
+                    </div>
+                    <h3>product name</h3>
+                    <h5>rs.100</h5>
+                    <button class="btn-item"><i class="fa fa-cart-shopping"></i> add to cart</button>
+                    <button class="btn-fav"><i class="fa fa-heart
+                        "></i></button>
+                </div>
+
+                <div class="product">
+                    <div class="img-container">
+                        <img src="image-food/dog-food/dog6.png" alt="" class="product-img">
+                    </div>
+                    <h3>product name</h3>
+                    <h5>rs.100</h5>
+                    <button class="btn-item"><i class="fa fa-cart-shopping"></i> add to cart</button>
+                    <button class="btn-fav"><i class="fa fa-heart
+                        "></i></button>
+                </div>
+
+                <div class="product">
+                    <div class="img-container">
+                        <img src="image-food/dog-food/dog7.png" alt="" class="product-img">
+                    </div>
+                    <h3>product name</h3>
+                    <h5>rs.100</h5>
+                    <button class="btn-item"><i class="fa fa-cart-shopping"></i> add to cart</button>
+                    <button class="btn-fav"><i class="fa fa-heart
+                        "></i></button>
+                </div>
+
+                <div class="product">
+                    <div class="img-container">
+                        <img src="image-food/dog-food/dog8.png" alt="" class="product-img">
+                    </div>
+                    <h3>product name</h3>
+                    <h5>rs.100</h5>
+                    <button class="btn-item"><i class="fa fa-cart-shopping"></i> add to cart</button>
+                    <button class="btn-fav"><i class="fa fa-heart
+                        "></i></button>
+                </div>
+            </div>
+        </section>
+            
+        <section class="page" id="cat">
+            <div class="banner cat-banner"></div>
+            <div class="offer">
+                <img src="image-food/offer.png" class="offer-logo" alt="">
+                <img src="image-food/40.png" class="precent" alt="">
+                <img src="image-food/all.png" class="all" alt="" >
+            </div>
+            <h1 class="heading">CAT FOOD</h1>
+            <div class="product-container">
+
+                <div class="product">
+                    <div class="img-container">
+                        <img src="image-food/cat-food/cat1.png" alt="" class="product-img">
+                    </div>
+                    <h3>product name</h3>
+                    <h5>rs.100</h5>
+                    <button class="btn-item"><i class="fa fa-cart-shopping"></i> add to cart</button>
+                    <button class="btn-fav"><i class="fa fa-heart
+                        "></i></button>
+                </div>
+
+                <div class="product">
+                    <div class="img-container">
+                        <img src="image-food/cat-food/cat2.png" alt="" class="product-img">
+                    </div>
+                    <h3>product name</h3>
+                    <h5>rs.100</h5>
+                    <button class="btn-item"><i class="fa fa-cart-shopping"></i> add to cart</button>
+                    <button class="btn-fav"><i class="fa fa-heart
+                        "></i></button>
+                </div>
+
+                <div class="product">
+                    <div class="img-container">
+                        <img src="image-food/cat-food/cat3.png" alt="" class="product-img">
+                    </div>
+                    <h3>product name</h3>
+                    <h5>rs.100</h5>
+                    <button class="btn-item"><i class="fa fa-cart-shopping"></i> add to cart</button>
+                    <button class="btn-fav"><i class="fa fa-heart
+                        "></i></button>
+                </div>
+
+                <div class="product">
+                    <div class="img-container">
+                        <img src="image-food/cat-food/cat4.png" alt="" class="product-img">
+                    </div>
+                    <h3>product name</h3>
+                    <h5>rs.100</h5>
+                    <button class="btn-item"><i class="fa fa-cart-shopping"></i> add to cart</button>
+                    <button class="btn-fav"><i class="fa fa-heart
+                        "></i></button>
+                </div>
+
+                <div class="product">
+                    <div class="img-container">
+                        <img src="image-food/cat-food/cat5.png" alt="" class="product-img">
+                    </div>
+                    <h3>product name</h3>
+                    <h5>rs.100</h5>
+                    <button class="btn-item"><i class="fa fa-cart-shopping"></i> add to cart</button>
+                    <button class="btn-fav"><i class="fa fa-heart
+                        "></i></button>
+                </div>
+
+                <div class="product">
+                    <div class="img-container">
+                        <img src="image-food/cat-food/cat6.png" alt="" class="product-img">
+                    </div>
+                    <h3>product name</h3>
+                    <h5>rs.100</h5>
+                    <button class="btn-item"><i class="fa fa-cart-shopping"></i> add to cart</button>
+                    <button class="btn-fav"><i class="fa fa-heart
+                        "></i></button>
+                </div>
+
+                <div class="product">
+                    <div class="img-container">
+                        <img src="image-food/cat-food/cat7.png" alt="" class="product-img">
+                    </div>
+                    <h3>product name</h3>
+                    <h5>rs.100</h5>
+                    <button class="btn-item"><i class="fa fa-cart-shopping"></i> add to cart</button>
+                    <button class="btn-fav"><i class="fa fa-heart
+                        "></i></button>
+                </div>
+
+                <div class="product">
+                    <div class="img-container">
+                        <img src="image-food/cat-food/cat8.png" alt="" class="product-img">
+                    </div>
+                    <h3>product name</h3>
+                    <h5>rs.100</h5>
+                    <button class="btn-item"><i class="fa fa-cart-shopping"></i> add to cart</button>
+                    <button class="btn-fav"><i class="fa fa-heart
+                        "></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="page" id="fish">
+            <div class="banner"></div>
+            <div class="offer">
+                <img src="image-food/offer.png" class="offer-logo" alt="">
+                <img src="image-food/40.png" class="precent" alt="">
+                <img src="image-food/all.png" class="all" alt="" >
+            </div>
+            <h1 class="heading">FISH FOOD</h1>
+            <div class="product-container">
+
+                <div class="product">
+                    <div class="img-container">
+                        <img src="image-food/fish-food/fish1.png" alt="" class="product-img">
+                    </div>
+                    <h3>product name</h3>
+                    <h5>rs.100</h5>
+                    <button class="btn-item"><i class="fa fa-cart-shopping"></i> add to cart</button>
+                    <button class="btn-fav"><i class="fa fa-heart
+                        "></i></button>
+                </div>
+
+                <div class="product">
+                    <div class="img-container">
+                        <img src="image-food/fish-food/fish2.png" alt="" class="product-img">
+                    </div>
+                    <h3>product name</h3>
+                    <h5>rs.100</h5>
+                    <button class="btn-item"><i class="fa fa-cart-shopping"></i> add to cart</button>
+                    <button class="btn-fav"><i class="fa fa-heart
+                        "></i></button>
+                </div>
+
+                <div class="product">
+                    <div class="img-container">
+                        <img src="image-food/fish-food/fish3.png" alt="" class="product-img">
+                    </div>
+                    <h3>product name</h3>
+                    <h5>rs.100</h5>
+                    <button class="btn-item"><i class="fa fa-cart-shopping"></i> add to cart</button>
+                    <button class="btn-fav"><i class="fa fa-heart
+                        "></i></button>
+                </div>
+
+                <div class="product">
+                    <div class="img-container">
+                        <img src="image-food/fish-food/fish4.png" alt="" class="product-img">
+                    </div>
+                    <h3>product name</h3>
+                    <h5>rs.100</h5>
+                    <button class="btn-item"><i class="fa fa-cart-shopping"></i> add to cart</button>
+                    <button class="btn-fav"><i class="fa fa-heart
+                        "></i></button>
+                </div>
+
+                <div class="product">
+                    <div class="img-container">
+                        <img src="image-food/fish-food/fish5.png" alt="" class="product-img">
+                    </div>
+                    <h3>product name</h3>
+                    <h5>rs.100</h5>
+                    <button class="btn-item"><i class="fa fa-cart-shopping"></i> add to cart</button>
+                    <button class="btn-fav"><i class="fa fa-heart
+                        "></i></button>
+                </div>
+
+                <div class="product">
+                    <div class="img-container">
+                        <img src="image-food/fish-food/fish6.png" alt="" class="product-img">
+                    </div>
+                    <h3>product name</h3>
+                    <h5>rs.100</h5>
+                    <button class="btn-item"><i class="fa fa-cart-shopping"></i> add to cart</button>
+                    <button class="btn-fav"><i class="fa fa-heart
+                        "></i></button>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="page" id="bird">
+            <div class="banner"></div>
+            <div class="offer">
+                <img src="image-food/offer.png" class="offer-logo" alt="">
+                <img src="image-food/40.png" class="precent" alt="">
+                <img src="image-food/all.png" class="all" alt="" >
+            </div>
+            <h1 class="heading">BIRD FOOD</h1>
+            <div class="product-container">
+
+                <div class="product">
+                    <div class="img-container">
+                        <img src="image-food/bird-food/bird1.png" alt="" class="product-img">
+                    </div>
+                    <h3>product name</h3>
+                    <h5>rs.100</h5>
+                    <button class="btn-item"><i class="fa fa-cart-shopping"></i> add to cart</button>
+                    <button class="btn-fav"><i class="fa fa-heart
+                        "></i></button>
+                </div>
+
+                <div class="product">
+                    <div class="img-container">
+                        <img src="image-food/bird-food/bird2.png" alt="" class="product-img">
+                    </div>
+                    <h3>product name</h3>
+                    <h5>rs.100</h5>
+                    <button class="btn-item"><i class="fa fa-cart-shopping"></i> add to cart</button>
+                    <button class="btn-fav"><i class="fa fa-heart
+                        "></i></button>
+                </div>
+
+                <div class="product">
+                    <div class="img-container">
+                        <img src="image-food/bird-food/bird3.png" alt="" class="product-img">
+                    </div>
+                    <h3>product name</h3>
+                    <h5>rs.100</h5>
+                    <button class="btn-item"><i class="fa fa-cart-shopping"></i> add to cart</button>
+                    <button class="btn-fav"><i class="fa fa-heart
+                        "></i></button>
+                </div>
+
+                <div class="product">
+                    <div class="img-container">
+                        <img src="image-food/bird-food/bird4.png" alt="" class="product-img">
+                    </div>
+                    <h3>product name</h3>
+                    <h5>rs.100</h5>
+                    <button class="btn-item"><i class="fa fa-cart-shopping"></i> add to cart</button>
+                    <button class="btn-fav"><i class="fa fa-heart
+                        "></i></button>
+                </div>
+
+                <div class="product">
+                    <div class="img-container">
+                        <img src="image-food/bird-food/bird5.png" alt="" class="product-img">
+                    </div>
+                    <h3>product name</h3>
+                    <h5>rs.100</h5>
+                    <button class="btn-item"><i class="fa fa-cart-shopping"></i> add to cart</button>
+                    <button class="btn-fav"><i class="fa fa-heart
+                        "></i></button>
+                </div>
+
+                <div class="product">
+                    <div class="img-container">
+                        <img src="image-food/bird-food/bird6.png" alt="" class="product-img">
+                    </div>
+                    <h3>product name</h3>
+                    <h5>rs.100</h5>
+                    <button class="btn-item"><i class="fa fa-cart-shopping"></i> add to cart</button>
+                    <button class="btn-fav"><i class="fa fa-heart
+                        "></i></button>
+                </div>
+
+                <div class="product">
+                    <div class="img-container">
+                        <img src="image-food/bird-food/bird7.png" alt="" class="product-img">
+                    </div>
+                    <h3>product name</h3>
+                    <h5>rs.100</h5>
+                    <button class="btn-item"><i class="fa fa-cart-shopping"></i> add to cart</button>
+                    <button class="btn-fav"><i class="fa fa-heart
+                        "></i></button>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="page" id="rabbit">
+            <div class="banner"></div>
+            <div class="offer">
+                <img src="image-food/offer.png" class="offer-logo" alt="">
+                <img src="image-food/40.png" class="precent" alt="">
+                <img src="image-food/all.png" class="all" alt="" >
+            </div>
+            <h1 class="heading">RABBIT FOOD</h1>
+            <div class="product-container">
+
+                <div class="product">
+                    <div class="img-container">
+                        <img src="image-food/rabbit-food/rab1.png" alt="" class="product-img">
+                    </div>
+                    <h3>product name</h3>
+                    <h5>rs.100</h5>
+                    <button class="btn-item"><i class="fa fa-cart-shopping"></i> add to cart</button>
+                    <button class="btn-fav"><i class="fa fa-heart
+                        "></i></button>
+                </div>
+
+                <div class="product">
+                    <div class="img-container">
+                        <img src="image-food/rabbit-food/rab2.png" alt="" class="product-img">
+                    </div>
+                    <h3>product name</h3>
+                    <h5>rs.100</h5>
+                    <button class="btn-item"><i class="fa fa-cart-shopping"></i> add to cart</button>
+                    <button class="btn-fav"><i class="fa fa-heart
+                        "></i></button>
+                </div>
+
+                <div class="product">
+                    <div class="img-container">
+                        <img src="image-food/rabbit-food/rab3.png" alt="" class="product-img">
+                    </div>
+                    <h3>product name</h3>
+                    <h5>rs.100</h5>
+                    <button class="btn-item"><i class="fa fa-cart-shopping"></i> add to cart</button>
+                    <button class="btn-fav"><i class="fa fa-heart
+                        "></i></button>
+                </div>
+
+                <div class="product">
+                    <div class="img-container">
+                        <img src="image-food/rabbit-food/rab4.png" alt="" class="product-img">
+                    </div>
+                    <h3>product name</h3>
+                    <h5>rs.100</h5>
+                    <button class="btn-item"><i class="fa fa-cart-shopping"></i> add to cart</button>
+                    <button class="btn-fav"><i class="fa fa-heart
+                        "></i></button>
+                </div>
+
+                <div class="product">
+                    <div class="img-container">
+                        <img src="image-food/rabbit-food/rab5.png" alt="" class="product-img">
+                    </div>
+                    <h3>product name</h3>
+                    <h5>rs.100</h5>
+                    <button class="btn-item"><i class="fa fa-cart-shopping"></i> add to cart</button>
+                    <button class="btn-fav"><i class="fa fa-heart
+                        "></i></button>
+                </div>
+                          
+        </section>
+        <!-- PRODUCT END -->
+
+           <!-- CONTACT START -->
+     <section class="contact reveal" id="contact">
+        <div class="contact-container">
+            <div class="contact-detail">
+                <h1>Opening Hours</h1>
+                <p>Our support available to help you 24 hours a day. <br> We provide our best.</p>
+                <p>Mon - Fri : 08.00 am - 20.00 pm </p>
+                <p>Saturday : 10.00 am - 20.00 pm</p>
+                <p>Sunday : We Are Closed</p>
+            </div>
+            <div class="contact-detail">
+                <h1>Contact Info</h1>
+                <p><i class="fa-solid fa-location"></i> PET STREET - PET WORLD</p>
+                <p><i class="fa-solid fa-envelope"></i> CHANGNOICARE@GMAIL.COM</p>
+                <p><i class="fa-solid fa-phone"></i> +91 1234567890</p>
+            </div>
+        </div>
+     </section>
+     <!-- CONTACT END -->
+     <footer class="copyright">
+        <div class="left-footer">
+            <p><i class="fa-regular fa-copyright"></i> 2022 MAGIC PAWS. All Rights Reserved. Designed By Vicky</p>
+        </div>
+        <div class="right-footer">
+            <p><i class="fa-brands fa-facebook"></i></p>
+            <p><i class="fa-brands fa-twitter"></i></p>
+            <p><i class="fa-brands fa-instagram"></i></p>
+        </div>
+     </footer>
+
+    <script src="js/food.js"></script>
+</body>
+</html>

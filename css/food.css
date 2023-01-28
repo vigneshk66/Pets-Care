@@ -1,0 +1,659 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Anton', sans-serif;
+font-family: 'Rubik Bubbles', cursive;
+font-family: 'Ultra', serif; */
+
+:root{
+    --color-1: #f6f619 ;
+    --color-2: #ffffff;
+    --color-3: #fe7701;
+    --color-4: #3b2ecc ;
+    /* --color-5: #e6e7e9; */
+    --color-5: #c9c9c9;
+    --color-6: #7078793d;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+body{
+    background-color: var(--color-5);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    background-color: var(--color-3);
+    color: var(--color-2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+/* HEADER */
+header .logo{
+    font-size: 3rem;
+    font-family: 'Fredericka the Great', cursive;
+    text-transform: uppercase;
+}
+.nav-tab {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.nav-tab li{
+    padding: 0rem 2rem;
+}
+.nav-tab li i{
+    padding: 0rem .8rem;
+}
+#cart{
+    position: relative;
+}
+#cart span{
+    font-size: 1.4rem;
+    position: absolute;
+    top: -1rem;
+    right: 2.8rem;
+    color: var(--color-4);
+    font-weight: 700;
+}
+/* LOGIN */
+.login{
+    background-color: var(--color-2);
+    width: 37rem;
+    position: fixed;
+    top: 5.7rem;
+    right: -100%;
+    text-align: center;
+    padding: 1rem;
+    z-index: 100;
+    border: 5px solid var(--color-3);
+    border-radius: 0 0 2rem 2rem;
+}
+.login h1{
+    font-size: 3rem;
+    color: var(--color-4);
+}
+.form input{
+    width: 90%;
+    border: none;
+    border-bottom: .3rem solid var(--color-3);
+    margin: .2rem 2rem;
+    padding-top: 3rem;
+    padding-bottom: .5rem;
+    outline:none;
+    padding-left: 1rem;
+}
+.form input:hover{
+    border-bottom: .3rem solid var(--color-4);
+}
+.form button{
+    background-color: var(--color-3);
+    border: none;
+    margin: 1.5rem;
+    padding: 1rem;
+    width: 10rem;
+    color: var(--color-2);
+    font-weight: 700;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.form button:hover{
+    background-color: var(--color-4);
+}
+.extra{
+    font-weight: 600;
+}
+.extra p:nth-child(1){
+    color: var(--color-4);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.extra p:nth-child(2) span{
+    color: var(--color-4);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.extra p:nth-child(3){
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 1rem 0
+}
+.extra p:nth-child(3) span{
+    color: var(--color-3);
+}
+
+.login.active{
+    right: 0%;
+    transition: all .5s ease-in;
+}
+
+/* SUCCESS */
+.success{
+    background-color: var(--color-2);
+    width: 37rem;
+    height: 34rem;
+    position: fixed;
+    top: 5.7rem;
+    right: -100%;
+    text-align: center;
+    padding: 1rem;
+    padding-top: 5rem;
+    z-index: 100;
+    border: 5px solid var(--color-3);
+    border-radius: 0 0 2rem 2rem;
+    color: rgb(12, 127, 12);
+}
+.success p i{
+    padding: 2rem;
+    font-size: 6rem;
+}
+.success p{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.success button{
+    font-size: 1.8rem;
+    background-color:rgb(12, 127, 12) ;
+    padding: 1.2rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 1rem;
+    color: var(--color-2);
+}
+.success.active{
+    right: 0%;
+    transition: all .5s ease-in;
+}
+
+
+/* REGISTER */
+.register{
+    background-color: var(--color-2);
+    width: 37rem;
+    position: fixed;
+    top: 5.7rem;
+    right: -100%;
+    text-align: center;
+    padding: 1rem;
+    z-index: 100;
+    border: 5px solid var(--color-3);
+    border-radius: 0 0 2rem 2rem;
+}
+.register h1{
+    font-size: 2.8rem;
+    color: var(--color-3);
+}
+.register input{
+    width: 90%;
+    border: none;
+    border-bottom: .3rem solid var(--color-3);
+    margin: .2rem 2rem;
+    padding-top: 3rem;
+    padding-bottom: .5rem;
+    outline:none;
+    padding-left: 1rem;
+}
+.register input:hover{
+    border-bottom: .3rem solid var(--color-4);
+}
+.register button{
+    background-color: var(--color-3);
+    border: none;
+    margin: 1.5rem;
+    padding: 1rem;
+    width: 10rem;
+    color: var(--color-2);
+    font-weight: 700;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.register button:hover{
+    background-color: var(--color-4);
+}
+.reg-extra{
+    font-weight: 600;
+    padding-top: 2rem;
+}
+.reg-extra span{
+    font-size: 1.2rem;
+    color: var(--color-4);
+    font-weight: 700;
+    cursor: pointer;
+}
+.register.active{
+    right: 0%;
+    transition: all .5s ease-in;
+}
+
+/* OFFER */
+.offer-banner{
+    background-image: url(../images/banner.jpg) ;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 7rem 3rem 0rem;
+}
+.offer-image img{
+    width:42rem;
+}
+.offer-pre{
+    font-size: 4.3rem;
+    color: var(--color-2);
+    text-align: center;
+}
+.offer-pre h1 span{
+    color: var(--color-3);
+    text-shadow: 3px 3px 3px var(--color-1);
+}
+
+/* LIST ITEM */
+.container{
+    position: sticky;
+    top: 5.7rem;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+#items{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-4);
+}
+#items li{
+    border-bottom: 2px solid transparent;
+    margin: 1rem 2rem;
+}
+#items li:hover{
+    transform: scale(1.05);
+    border-bottom: 2px solid var(--color-3);
+    transition: all .3s ease-in-out;
+}
+#items li:hover a{
+    transition: all .5s linear;
+    color: var(--color-3);
+}
+#items .active a{
+    color: var(--color-3);
+}
+#items li a{
+    color: var(--color-2);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.page h1{
+    background-color: var(--color-3);
+    text-align: center;
+    padding: 1rem;
+    font-size: 3rem;
+    color: var(--color-4);
+    letter-spacing: .3rem;
+    word-spacing: 2rem;
+    font-family: 'Ultra', serif;
+}
+
+/* BANNER */
+.page .banner{
+    width: 100%;
+    height: 35rem;
+}
+.banner{
+    background-image: url(../image-food/dog.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* OFFER */
+.page .offer{
+    background-color: var(--color-2);
+    height:30rem;
+}
+.offer-logo{
+    height: 23rem;
+    margin: 2rem 2rem 2rem 20rem;
+}
+.precent{
+    height: 18rem;
+}
+.all{
+    height: 20rem;
+}
+
+
+
+/* PRODUCTS */
+.product-container{
+    width: 90vw;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(300px , 1fr) );
+    gap: 3rem;
+    text-align: center;
+}
+.product{
+    background-color: var(--color-2);
+    position: relative;
+}
+.product:hover{
+    box-shadow: 7px 7px 15px 5px rgb(240, 24, 24);
+}
+.img-container{
+    height: 300px;
+    overflow: hidden;
+    padding: 1rem;
+}
+.product-img{
+    width: 100%;
+    height: 100%;
+}
+.product h3{
+    padding: 1rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: var(--color-2);
+    background-color: var(--color-3);
+}
+.product h5{
+    background-color: var(--color-4);
+    color: var(--color-2);
+    padding: .2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.btn-item{
+    border: none;
+    padding: 1rem;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(18, 18, 227, 0.4);
+    color: var(--color-2);
+    font-weight: 600;
+}
+.btn-item:hover{
+    background-color: var(--color-4);
+    color: var(--color-3);
+}
+
+.btn-fav{
+    border: none;
+    padding: 1rem;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    background-color: rgba(18, 18, 227, 0.4);
+    color: var(--color-2);
+}
+.btn-fav:hover{
+    background-color: var(--color-4);
+}
+/* CONTACT START */
+.contact{
+    background-color: rgba(62, 61, 61, 0.918);
+    color: var(--color-2);
+    padding: 5rem 2rem;
+}
+.contact-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.contact-container h1{
+    font-size: 3rem;
+    padding: 1.5rem 0;
+    color: var(--color-3);
+}
+.contact-container p{
+    font-size: 1.5rem;
+    padding: .5rem 0;
+}
+/* CONTACT END */
+
+/* FOOTER START */
+footer{
+    background-color: var(--color-3);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.copyright{
+    padding: 1rem 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-items: flex-start;
+}
+.right-footer{
+    display: flex;
+}
+.right-footer p{
+    padding-left: 3rem;
+}
+/* FOOTER END */
+
+
+.favactive{
+    color: red;
+    background-color: var(--color-4);
+}
+
+
+
+
+
+
+.page{
+    display: none;
+}
+.pageactive{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive */
+@media(max-width:1024px){
+    /* offer */
+    .page .offer{
+        background-color: var(--color-2);
+        height:25rem;
+    }
+    .offer-logo{
+        height: 15rem;
+        margin: 2rem 2rem 2rem 20rem;
+    }
+    .precent{
+        height: 13rem;
+    }
+    .all{
+        height: 12rem;
+    }
+}
+
+
+@media (max-width:970px){
+    html{
+        font-size: 50%;
+    }
+}
+
+@media (max-width:768px) {
+    /* offer */
+    .page .offer{
+        background-color: var(--color-2);
+        height:25rem;
+    }
+    .offer-logo{
+        height: 12rem;
+        margin: 2rem 2rem 2rem 10rem;
+    }
+    .precent{
+        height: 10rem;
+    }
+    .all{
+        height: 9rem;
+    }
+}
+
+
+@media (max-width:570px){
+
+    .logo span{
+        display: block;
+        text-align: center;
+    }
+
+    .container{
+        position: sticky;
+        top: 9rem;
+        right: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    /* offer content */
+    .offer-image img{
+        width:35rem;
+    }
+    .offer-pre{
+        font-size: 3rem;
+    }
+
+    /* offer */
+    .page .offer{
+        background-color: var(--color-2);
+        height:25rem;
+    }
+    .offer-logo{
+        height: 12rem;
+        margin: 2rem 2rem 2rem 5rem;
+    }
+    .precent{
+        height: 6rem;
+    }
+    .all{
+        height: 6rem;
+    }
+    /* CONTACT */
+    .contact{
+        background-color: rgba(62, 61, 61, 0.918);
+        color: var(--color-2);
+        padding: 5rem 2rem;
+    }
+    .contact-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .contact-container h1{
+        font-size: 2rem;
+        padding: 1.5rem 0;
+        color: var(--color-3);
+    }
+    .contact-container p{
+        font-size: 1rem;
+        padding: .5rem 0;
+    }
+    /* CONTACT END */
+    
+    /* FOOTER START */
+    footer{
+        background-color: var(--color-3);
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .copyright{
+        padding: 1rem 5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        justify-items: flex-start;
+    }
+    .right-footer{
+        display: flex;
+    }
+    .right-footer p{
+        padding-left: 3rem;
+    }
+}
+
+
+@media (max-width:450px){
+    html{
+        font-size: 45%;
+    }
+    /* /HEADER */
+    .nav-tab li{
+        padding: 0rem 1rem;
+    }
+
+}
+
+@media (max-width:350px) {
+    
+    /* offer */
+    .page .offer{
+        background-color: var(--color-2);
+        height:20rem;
+    }
+    .offer-logo{
+        height: 12rem;
+        margin: 2rem 2rem 2rem 1rem;
+    }
+    .precent{
+        height: 6rem;
+    }
+    .all{
+        height: 6rem;
+    }
+}
